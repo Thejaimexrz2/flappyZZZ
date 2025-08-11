@@ -1,10 +1,13 @@
 const config = {
   width: 800,
-  height: 600,
+  height: 500,
   parent: "container",
-  type: Phaser.CANVAS,
+  type: Phaser.AUTO,
   backgroundColor: "#109fcaff",
   scene: [MainScene],
+  physics: {
+    default: "arcade",
+  },
 };
 
 new Phaser.Game(config);
